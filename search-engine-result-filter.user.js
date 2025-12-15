@@ -4,6 +4,8 @@
 // @version      1.0
 // @description  Filters out specified domains from multiple search engines
 // @author       smed79
+// @license      GPLv3
+// @icon         https://raw.githubusercontent.com/smed79/search-engine-result-filter/refs/heads/main/icon.png
 // @match        https://www.google.com/search*
 // @match        https://www.bing.com/search*
 // @match        https://yandex.com/search*
@@ -11,6 +13,9 @@
 // @match        https://www.startpage.com/sp/search*
 // @grant        none
 // ==/UserScript==
+
+// How to Use?
+// https://github.com/smed79/search-engine-result-filter#how-to-use
 
 (function() {
     'use strict';
