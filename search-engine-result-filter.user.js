@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name         Search Engine Result Filter
 // @namespace    https://github.com/smed79/search-engine-result-filter
-// @version      1.0
+// @version      1.1
 // @description  Filters out specified domains from multiple search engines
 // @author       smed79
 // @license      GPLv3
 // @icon         https://raw.githubusercontent.com/smed79/search-engine-result-filter/refs/heads/main/icon.png
-// @match        https://www.google.com/search*
+// @match        https://www.google.*/search*
 // @match        https://www.bing.com/search*
 // @match        https://yandex.com/search*
 // @match        https://duckduckgo.com/?*
-// @match        https://www.startpage.com/sp/search*
+// @match        https://*.startpage.com/*/search*
 // @grant        none
 // ==/UserScript==
 
@@ -28,12 +28,13 @@
     ];
 
     // Search engine-specific result container selectors
+    // You can use comma-separated selectors to target multiple containers
     const SEARCH_ENGINES = {
         google: '.xpd',
         bing: '.b_algo',
         yandex: '.aR0S6LvzTmyFF',
         duckduckgo: '[id^="r1-"]',
-        startpage: '.css-z73qjy'
+        startpage: '.css-z73qjy, .result'  // Multiple selectors
         // Add more search engines here
     };
 
