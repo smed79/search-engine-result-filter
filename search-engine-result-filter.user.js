@@ -5,6 +5,7 @@
 // @description  Filters out specified domains from multiple search engines
 // @author       smed79
 // @license      GPLv3
+// @homepage     https://github.com/smed79/search-engine-result-filter
 // @icon         https://raw.githubusercontent.com/smed79/search-engine-result-filter/refs/heads/main/icon.png
 // @include      *://*.google.*/search*
 // @include      *://*.bing.com/search*
@@ -33,7 +34,7 @@
     // Search engine-specific result container selectors
     // You can use comma-separated selectors to target multiple containers
     const SEARCH_ENGINES = {
-        google: '.xpd, .MjjYud, .Ww4FFb',
+        google: '.xpd, div[data-dsrp]',
         bing: '.b_algo',
         yandex: '.serp-item',
         baidu: '.result',
