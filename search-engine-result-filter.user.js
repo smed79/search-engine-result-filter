@@ -6,13 +6,13 @@
 // @author       smed79
 // @license      GPLv3
 // @icon         https://raw.githubusercontent.com/smed79/search-engine-result-filter/refs/heads/main/icon.png
-// @match        *://*.google.*/search*
-// @match        *://*.bing.com/search*
-// @match        *://*.yandex.*/search*
-// @match        *://*.baidu.com/s?*
-// @match        *://duckduckgo.com/?*
-// @match        *://*.startpage.com/*/search*
-// @match        *://priv.au/search*
+// @include      *://*.google.*/search*
+// @include      *://*.bing.com/search*
+// @include      *://*.yandex.*/search*
+// @include      *://*.baidu.com/s?*
+// @include      *://*.startpage.com/*/search*
+// @include      *://duckduckgo.com/?*
+// @include      *://priv.au/search*
 // @grant        none
 // ==/UserScript==
 
