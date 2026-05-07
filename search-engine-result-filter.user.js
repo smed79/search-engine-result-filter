@@ -1,19 +1,18 @@
 // ==UserScript==
 // @name         Search Engine Result Filter
-// @namespace    https://github.com/smed79/search-engine-result-filter
+// @namespace    U2VhcmNoIEVuZ2luZSBSZXN1bHQgRmlsdGVy
 // @version      2.0
 // @description  Filters out specified domains from multiple search engines
 // @author       smed79
 // @license      GPLv3
-// @homepage     https://github.com/smed79/search-engine-result-filter
 // @icon         https://raw.githubusercontent.com/smed79/search-engine-result-filter/refs/heads/main/icon.png
-// @include      *://*.google.*/search*
-// @include      *://*.bing.com/search*
-// @include      *://*.yandex.*/search*
-// @include      *://*.baidu.com/s?*
-// @include      *://*.startpage.com/*/search*
-// @include      *://duckduckgo.com/?*
-// @include      *://priv.au/search*
+// @match        *://*.google.com/search*
+// @match        *://*.bing.com/search*
+// @match        *://*.yandex.com/search*
+// @match        *://*.baidu.com/s?*
+// @match        *://*.startpage.com/*/search*
+// @match        *://duckduckgo.com/?*
+// @match        *://priv.au/search*
 // @grant        none
 // ==/UserScript==
 
@@ -34,7 +33,7 @@
     // Search engine-specific result container selectors
     // You can use comma-separated selectors to target multiple containers
     const SEARCH_ENGINES = {
-        google: '.xpd, div[data-dsrp]',
+        google: '.xpd, .A6K0A',
         bing: '.b_algo',
         yandex: '.serp-item',
         baidu: '.result',
