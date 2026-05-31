@@ -21,6 +21,7 @@ Search results often include content from unwanted or low-quality websites. This
 
 1. **Install a UserScript Manager**  
    To use this script, you need a userscript manager installed in your browser:
+   - [ScriptCat](https://github.com/scriptscat/scriptcat)
    - [Tampermonkey](https://www.tampermonkey.net/)
    - [Greasemonkey](https://www.greasespot.net/)
    - [Violentmonkey](https://violentmonkey.github.io/)
@@ -114,6 +115,8 @@ If you'd like to add support for other search engines:
 - Yandex
 - DuckDuckGo
 - Startpage
+- Priv.au (_SearXNG_)
+- Baidu
 
 Feel free to expand the script to include more search engines or additional features!
 
